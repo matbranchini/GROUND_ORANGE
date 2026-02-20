@@ -52,8 +52,8 @@ button.secondary{background:transparent}
 .filter-btn.active{background:var(--accent);border-color:var(--accent);color:var(--text)}
 
 .kpi-with-tooltip{position:relative;cursor:pointer}
-.kpi-tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#1a2332;border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-size:12px;white-space:nowrap;opacity:0;visibility:hidden;transition:opacity 0.2s,visibility 0.2s;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
-.kpi-tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:#1a2332}
+.kpi-tooltip{position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#1a2332;border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-size:12px;white-space:nowrap;opacity:0;visibility:hidden;transition:opacity 0.2s,visibility 0.2s;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.3);margin-top:8px}
+.kpi-tooltip::after{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-bottom-color:#1a2332}
 .kpi-with-tooltip:hover .kpi-tooltip{opacity:1;visibility:visible}
 .kpi-tooltip-row{display:flex;justify-content:space-between;gap:16px;margin:2px 0}
 .kpi-tooltip-row.total{border-top:1px solid var(--border);margin-top:6px;padding-top:6px;font-weight:600}
