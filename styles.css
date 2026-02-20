@@ -34,6 +34,13 @@ button.secondary{background:transparent}
 @media (max-width: 980px){.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-2{grid-template-columns:1fr}.form{grid-template-columns:1fr 1fr}}
 @media (max-width: 520px){.form{grid-template-columns:1fr}}
 
+.chart-container{position:relative;width:100%;min-height:200px;height:250px}
+@media (max-width: 768px){.chart-container{min-height:180px;height:220px}}
+
+#tableInvestors{min-width:auto}
+#tableInvestors th,#tableInvestors td{padding:10px 8px}
+@media (max-width: 768px){#tableInvestors th:nth-child(2),#tableInvestors td:nth-child(2){text-align:right}}
+
 .brand{display:flex;align-items:center}
 .brand h1{font-family:'Poppins',system-ui,sans-serif;font-weight:700;letter-spacing:-0.5px;color:#fff}
 

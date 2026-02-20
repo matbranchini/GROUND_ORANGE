@@ -94,7 +94,7 @@ function renderValueChart(perf) {
         { label: 'Valore Mercato (G)', data: filtered.map(x => x.market_value_gross), borderWidth: 2 }
       ]
     },
-    options: { responsive: true, scales: { x: { display: false } } }
+    options: { responsive: true, maintainAspectRatio: false, scales: { x: { display: false } } }
   });
 }
 
@@ -112,7 +112,7 @@ function renderPerfChart(perf) {
         { label: 'Performance % (I)', data: filtered.map(x => x.perf_pct * 100), borderWidth: 2 }
       ]
     },
-    options: { responsive: true, scales: { x: { display: false }, y: { ticks: { callback: v => v + '%' } } } }
+    options: { responsive: true, maintainAspectRatio: false, scales: { x: { display: false }, y: { ticks: { callback: v => v + '%' } } } }
   });
 }
 
@@ -165,7 +165,7 @@ function renderDividendsChart(perf) {
         { label: 'Dividendi CUM (Netto)', data: cumDividends, type: 'line', borderWidth: 2, order: 1 }
       ]
     },
-    options: { responsive: true, scales: { x: { display: true } } }
+    options: { responsive: true, maintainAspectRatio: false, scales: { x: { display: true } } }
   });
 }
 
