@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ground Orange — Portfolio Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/ground-orange-logo-64.png" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Ground Orange</h1>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="dashboard">Dashboard</button>
+      <button class="tab" data-tab="investors">Investitori</button>
+      <button class="tab" data-tab="performance">Performance</button>
+      <button class="tab" data-tab="data">Dati</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="dashboard" class="panel active">
+      <div class="kpi-grid">
+        <div class="kpi"><div class="kpi-label">Valore di mercato (Lordo)</div><div class="kpi-value" id="kpi-market">—</div></div>
+        <div class="kpi"><div class="kpi-label">Contribuzioni CUM</div><div class="kpi-value" id="kpi-contrib">—</div></div>
+        <div class="kpi kpi-with-tooltip" id="kpi-perf-box">
+          <div class="kpi-label">Performance (Lordo)</div>
+          <div class="kpi-value" id="kpi-perf">—</div>
+          <div class="kpi-sub" id="kpi-perf-pct">—</div>
+          <div class="kpi-tooltip" id="kpi-perf-tooltip"></div>
+        </div>
+        <div class="kpi kpi-with-tooltip" id="kpi-realized-box">
+          <div class="kpi-label">Ricavi realizzati CUM (Netto)</div>
+          <div class="kpi-value" id="kpi-realized">—</div>
+          <div class="kpi-tooltip" id="kpi-realized-tooltip"></div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h2>Valore vs Contribuzioni</h2>
+            <div class="chart-filters" data-chart="value">
+              <button class="filter-btn" data-range="1M">1M</button>
+              <button class="filter-btn" data-range="YTD">YTD</button>
+              <button class="filter-btn" data-range="1Y">1Y</button>
+              <button class="filter-btn" data-range="3Y">3Y</button>
+              <button class="filter-btn" data-range="5Y">5Y</button>
+              <button class="filter-btn active" data-range="MAX">MAX</button>
+            </div>
+          </div>
+          <canvas id="chartValue" height="120"></canvas>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2>Performance %</h2>
+            <div class="chart-filters" data-chart="perf">
+              <button class="filter-btn" data-range="1M">1M</button>
+              <button class="filter-btn" data-range="YTD">YTD</button>
+              <button class="filter-btn" data-range="1Y">1Y</button>
+              <button class="filter-btn" data-range="3Y">3Y</button>
+              <button class="filter-btn" data-range="5Y">5Y</button>
+              <button class="filter-btn active" data-range="MAX">MAX</button>
+            </div>
+          </div>
+          <canvas id="chartPerf" height="120"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Dividendi (Netto)</h2>
+          <div class="chart-filters" data-chart="dividends">
+            <button class="filter-btn" data-range="1M">1M</button>
+            <button class="filter-btn" data-range="YTD">YTD</button>
+            <button class="filter-btn" data-range="1Y">1Y</button>
+            <button class="filter-btn" data-range="3Y">3Y</button>
+            <button class="filter-btn" data-range="5Y">5Y</button>
+            <button class="filter-btn active" data-range="MAX">MAX</button>
+          </div>
+        </div>
+        <canvas id="chartDividends" height="100"></canvas>
+      </div>
+
+      <div class="card">
+        <h2>Ultimi snapshot</h2>
+        <div class="table-wrap">
+          <table id="tableSnapshots">
+            <thead><tr>
+              <th>Data</th><th>Contribuzioni CUM</th><th>Dividendi (Netto)</th><th>Plusvalenze (Netto)</th><th>Valore mercato (Lordo)</th><th>Performance €</th><th>Performance %</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card notes-card">
+        <h2>Note</h2>
+        <ul class="notes-list">
+          <li><strong>CUM</strong> = cumulati</li>
+          <li><strong>Plusvalenza Vendita Asset</strong> include profitti da vendita di azioni/ETF/titoli di stato e interessi riscossi da investimenti di lending immobiliare</li>
+          <li><strong>Valore di mercato PTF</strong> è una fotografia (lorda) a fine mese del valore del portafoglio investito</li>
+          <li>La <strong>tassazione sulle plusvalenze finanziarie</strong> equivale a 26% per azioni/ETF/lending immobiliare e 12,5% per titoli di stato</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="investors" class="panel">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Cap table</h2>
+          <div class="table-wrap">
+            <table id="tableInvestors">
+              <thead><tr><th>Investitore</th><th>Contribuzioni totali</th><th>% Proprietà</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Contribuzioni (mensili)</h2>
+          <canvas id="chartContrib" height="160"></canvas>
+          <p class="muted">Grafico basato su transazioni <code>type=contribution</code> (JSON + eventuali aggiunte in localStorage).</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Aggiungi contribuzione (salvata in localStorage)</h2>
+        <form id="formContribution" class="form">
+          <label>Investitore<select id="contribInvestor" required></select></label>
+          <label>Data<input id="contribDate" type="date" required /></label>
+          <label>Importo (EUR)<input id="contribAmount" type="number" step="0.01" required /></label>
+          <label>Nota<input id="contribNote" type="text" placeholder="opzionale" /></label>
+          <button type="submit">Aggiungi</button>
+          <button type="button" class="secondary" id="btnClearLocal">Reset localStorage</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="performance" class="panel">
+      <div class="card">
+        <h2>Tabella performance (A..I)</h2>
+        <div class="table-wrap">
+          <table id="tablePerf">
+            <thead><tr>
+              <th>Periodo</th><th>Contribuzioni CUM (A)</th><th>Dividendi Netto (B)</th><th>Plusvalenze Netto (C)</th><th>Ricavi Realizzati CUM (D)</th><th>% Ricavi Realizzati (E)</th><th>Investiti CUM (F)</th><th>Valore Mercato Lordo (G)</th><th>Performance € (H)</th><th>Performance % (I)</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="data" class="panel">
+      <div class="card">
+        <h2>data.json</h2>
+        <pre id="jsonView" class="json"></pre>
+      </div>
+      <div class="card">
+        <h2>Come aggiornare</h2>
+        <ol>
+          <li>Modifica <code>data.json</code> nel repo</li>
+          <li>Commit & push</li>
+          <li>GitHub Pages aggiorna il sito</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span class="muted">Ground Orange</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

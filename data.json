@@ -1,0 +1,3408 @@
+{
+  "meta": {
+    "fund_name": "Ground Orange",
+    "base_currency": "EUR",
+    "source_note": "Dati iniziali estratti da Excel; modifica manualmente in data.json."
+  },
+  "investors": [
+    {
+      "id": "matteo",
+      "name": "Matteo",
+      "contributions_total": 6677.889999999999,
+      "ownership_pct": 0.17845405681014664
+    },
+    {
+      "id": "volpin",
+      "name": "Volpin",
+      "contributions_total": 3477.89,
+      "ownership_pct": 0.09294007233414162
+    },
+    {
+      "id": "robert",
+      "name": "Robert",
+      "contributions_total": 3150.0,
+      "ownership_pct": 0.08417782846856747
+    },
+    {
+      "id": "paolo",
+      "name": "Paolo",
+      "contributions_total": 3475.0,
+      "ownership_pct": 0.09286284251691172
+    },
+    {
+      "id": "elisa",
+      "name": "Elisa",
+      "contributions_total": 2775.0,
+      "ownership_pct": 0.07415665841278563
+    },
+    {
+      "id": "ornella",
+      "name": "Ornella",
+      "contributions_total": 5815.0,
+      "ownership_pct": 0.15539494366499043
+    },
+    {
+      "id": "palma",
+      "name": "Palma",
+      "contributions_total": 2900.0,
+      "ownership_pct": 0.07749704843137957
+    },
+    {
+      "id": "giuseppe",
+      "name": "Giuseppe",
+      "contributions_total": 2900.0,
+      "ownership_pct": 0.07749704843137957
+    },
+    {
+      "id": "loretta-daniele",
+      "name": "Loretta & Daniele",
+      "contributions_total": 200.0,
+      "ownership_pct": 0.005344624029750315
+    },
+    {
+      "id": "emma",
+      "name": "Emma",
+      "contributions_total": 1750.0,
+      "ownership_pct": 0.04676546026031526
+    },
+    {
+      "id": "luca",
+      "name": "Luca",
+      "contributions_total": 1750.0,
+      "ownership_pct": 0.04676546026031526
+    },
+    {
+      "id": "antonio",
+      "name": "Antonio",
+      "contributions_total": 0.0,
+      "ownership_pct": 0.0
+    },
+    {
+      "id": "adele",
+      "name": "Adele",
+      "contributions_total": 400.0,
+      "ownership_pct": 0.01068924805950063
+    },
+    {
+      "id": "dominic",
+      "name": "Dominic",
+      "contributions_total": 1500.0,
+      "ownership_pct": 0.04008468022312737
+    },
+    {
+      "id": "luigi-manuela",
+      "name": "Luigi & Manuela",
+      "contributions_total": 650.0,
+      "ownership_pct": 0.017370028096688524
+    }
+  ],
+  "transactions": [
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-01-01",
+      "amount": 1327.8899999999999,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2023-12-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-01-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-02-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-03-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-04-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-05-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-06-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-07-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-08-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-09-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-10-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-11-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2024-12-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-01-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-02-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-03-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-04-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-05-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-06-01",
+      "amount": 200.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-07-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-08-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-09-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-10-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-11-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2025-12-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "matteo",
+      "date": "2026-01-01",
+      "amount": 850.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-01-01",
+      "amount": 1327.8899999999999,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2023-12-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-01-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-02-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-03-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-04-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-05-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-06-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-07-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-08-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-09-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-10-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-11-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2024-12-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-01-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-02-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-03-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-04-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-05-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-06-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-07-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-08-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-09-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-10-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-11-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "volpin",
+      "date": "2025-12-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2023-12-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2024-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2025-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "robert",
+      "date": "2026-01-01",
+      "amount": 425.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2023-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2024-12-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-01-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-02-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-03-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-04-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-05-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-06-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-07-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-08-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-09-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-10-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-11-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2025-12-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "paolo",
+      "date": "2026-01-01",
+      "amount": 450.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2023-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2024-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2025-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "elisa",
+      "date": "2026-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-01-01",
+      "amount": 150.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2024-12-01",
+      "amount": 3115.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2025-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "ornella",
+      "date": "2026-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2023-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2024-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2025-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2026-01-01",
+      "amount": 425.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "palma",
+      "date": "2026-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2023-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2024-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2025-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2026-01-01",
+      "amount": 425.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "giuseppe",
+      "date": "2026-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "loretta-daniele",
+      "date": "2023-12-01",
+      "amount": 200.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "emma",
+      "date": "2023-09-01",
+      "amount": 1750.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luca",
+      "date": "2023-09-01",
+      "amount": 1750.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2023-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2023-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2023-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2023-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2024-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-01-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-02-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-03-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-04-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-05-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-06-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-07-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-08-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-09-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-10-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-11-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2025-12-01",
+      "amount": 75.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "antonio",
+      "date": "2026-01-01",
+      "amount": -2100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "adele",
+      "date": "2025-01-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "adele",
+      "date": "2026-01-01",
+      "amount": 300.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-01-01",
+      "amount": 200.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-02-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-03-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-04-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-05-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-06-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-07-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-08-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-09-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-10-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-11-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2025-12-01",
+      "amount": 100.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "dominic",
+      "date": "2026-01-01",
+      "amount": 200.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-01-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-02-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-03-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-04-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-05-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-06-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-07-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-08-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-09-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-10-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-11-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2025-12-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    },
+    {
+      "type": "contribution",
+      "investor_id": "luigi-manuela",
+      "date": "2026-01-01",
+      "amount": 50.0,
+      "currency": "EUR",
+      "note": ""
+    }
+  ],
+  "dividends": [],
+  "market_snapshots": [
+    {
+      "date": "2023-01-28",
+      "period": "2023-01",
+      "contrib_cum": 2955.7799999999997,
+      "dividends_net": 7.4,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 2938.67,
+      "realized_cum_net": 7.4,
+      "realized_pct": 0.0025035693,
+      "invested_cum": 2963.18,
+      "perf_eur": -17.11,
+      "perf_pct": -0.0057886582
+    },
+    {
+      "date": "2023-02-28",
+      "period": "2023-02",
+      "contrib_cum": 3405.7799999999997,
+      "dividends_net": 0.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 3393.67,
+      "realized_cum_net": 7.4,
+      "realized_pct": 0.0021727769,
+      "invested_cum": 3413.18,
+      "perf_eur": -12.11,
+      "perf_pct": -0.00355572
+    },
+    {
+      "date": "2023-03-28",
+      "period": "2023-03",
+      "contrib_cum": 3855.7799999999997,
+      "dividends_net": 11.4,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 3894.07,
+      "realized_cum_net": 18.8,
+      "realized_pct": 0.0048757969,
+      "invested_cum": 3874.58,
+      "perf_eur": 38.29,
+      "perf_pct": 0.0099305458
+    },
+    {
+      "date": "2023-04-28",
+      "period": "2023-04",
+      "contrib_cum": 4305.78,
+      "dividends_net": 30.66,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 4367.73,
+      "realized_cum_net": 49.46,
+      "realized_pct": 0.0114868851,
+      "invested_cum": 4355.24,
+      "perf_eur": 61.95,
+      "perf_pct": 0.0143876371
+    },
+    {
+      "date": "2023-05-28",
+      "period": "2023-05",
+      "contrib_cum": 4905.78,
+      "dividends_net": 69.35000000000001,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 5241.080000000001,
+      "realized_cum_net": 118.81,
+      "realized_pct": 0.024218371,
+      "invested_cum": 5024.59,
+      "perf_eur": 335.3,
+      "perf_pct": 0.0683479487
+    },
+    {
+      "date": "2023-06-28",
+      "period": "2023-06",
+      "contrib_cum": 5505.78,
+      "dividends_net": 25.21,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 5601.29,
+      "realized_cum_net": 144.02,
+      "realized_pct": 0.0261579649,
+      "invested_cum": 5649.8,
+      "perf_eur": 95.51,
+      "perf_pct": 0.0173472242
+    },
+    {
+      "date": "2023-07-28",
+      "period": "2023-07",
+      "contrib_cum": 6105.78,
+      "dividends_net": 37.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 6788.29,
+      "realized_cum_net": 181.02,
+      "realized_pct": 0.0296473178,
+      "invested_cum": 6286.8,
+      "perf_eur": 682.51,
+      "perf_pct": 0.1117809682
+    },
+    {
+      "date": "2023-08-28",
+      "period": "2023-08",
+      "contrib_cum": 6705.78,
+      "dividends_net": 0.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 7301.29,
+      "realized_cum_net": 181.02,
+      "realized_pct": 0.0269946225,
+      "invested_cum": 6886.8,
+      "perf_eur": 595.51,
+      "perf_pct": 0.0888054783
+    },
+    {
+      "date": "2023-09-28",
+      "period": "2023-09",
+      "contrib_cum": 10880.779999999999,
+      "dividends_net": 39.02,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 11146.310000000001,
+      "realized_cum_net": 220.04,
+      "realized_pct": 0.0202228149,
+      "invested_cum": 11100.82,
+      "perf_eur": 265.53,
+      "perf_pct": 0.0244035814
+    },
+    {
+      "date": "2023-10-28",
+      "period": "2023-10",
+      "contrib_cum": 11555.779999999999,
+      "dividends_net": 48.120000000000005,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 11923.43,
+      "realized_cum_net": 268.16,
+      "realized_pct": 0.0232057031,
+      "invested_cum": 11823.94,
+      "perf_eur": 367.65,
+      "perf_pct": 0.0318152474
+    },
+    {
+      "date": "2023-11-28",
+      "period": "2023-11",
+      "contrib_cum": 12230.779999999999,
+      "dividends_net": 73.84,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 13504.27,
+      "realized_cum_net": 342.0,
+      "realized_pct": 0.0279622395,
+      "invested_cum": 12572.78,
+      "perf_eur": 1273.49,
+      "perf_pct": 0.1041217322
+    },
+    {
+      "date": "2023-12-28",
+      "period": "2023-12",
+      "contrib_cum": 13105.779999999999,
+      "dividends_net": 23.15,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 14037.42,
+      "realized_cum_net": 365.15,
+      "realized_pct": 0.0278617526,
+      "invested_cum": 13470.93,
+      "perf_eur": 931.64,
+      "perf_pct": 0.0710861925
+    },
+    {
+      "date": "2023-12-31",
+      "period": "2023",
+      "contrib_cum": 13105.779999999999,
+      "dividends_net": 365.15,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 14037.42,
+      "realized_cum_net": 730.3,
+      "realized_pct": 0.0557235052,
+      "invested_cum": 13836.08,
+      "perf_eur": 931.64,
+      "perf_pct": 0.0710861925
+    },
+    {
+      "date": "2024-01-28",
+      "period": "2024-01",
+      "contrib_cum": 13955.779999999999,
+      "dividends_net": 82.59,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 14806.74,
+      "realized_cum_net": 812.89,
+      "realized_pct": 0.0582475505,
+      "invested_cum": 14768.67,
+      "perf_eur": 850.96,
+      "perf_pct": 0.0609754525
+    },
+    {
+      "date": "2024-02-28",
+      "period": "2024-02",
+      "contrib_cum": 14730.779999999999,
+      "dividends_net": 0.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 15524.74,
+      "realized_cum_net": 812.89,
+      "realized_pct": 0.0551830928,
+      "invested_cum": 15543.67,
+      "perf_eur": 793.96,
+      "perf_pct": 0.0538980285
+    },
+    {
+      "date": "2024-03-28",
+      "period": "2024-03",
+      "contrib_cum": 15455.779999999999,
+      "dividends_net": 55.45,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 16744.0,
+      "realized_cum_net": 868.34,
+      "realized_pct": 0.0561822179,
+      "invested_cum": 16324.12,
+      "perf_eur": 1288.22,
+      "perf_pct": 0.0833487537
+    },
+    {
+      "date": "2024-04-28",
+      "period": "2024-04",
+      "contrib_cum": 16180.779999999999,
+      "dividends_net": 39.33,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 17663.507843,
+      "realized_cum_net": 907.67,
+      "realized_pct": 0.0560955652,
+      "invested_cum": 17088.45,
+      "perf_eur": 1482.727843,
+      "perf_pct": 0.0916351278
+    },
+    {
+      "date": "2024-05-28",
+      "period": "2024-05",
+      "contrib_cum": 16905.78,
+      "dividends_net": 411.45000000000005,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 18921.725745744,
+      "realized_cum_net": 1319.12,
+      "realized_pct": 0.0780277515,
+      "invested_cum": 18224.9,
+      "perf_eur": 2015.945746,
+      "perf_pct": 0.119245947
+    },
+    {
+      "date": "2024-06-28",
+      "period": "2024-06",
+      "contrib_cum": 17630.78,
+      "dividends_net": 78.6,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 19267.57,
+      "realized_cum_net": 1397.72,
+      "realized_pct": 0.079277264,
+      "invested_cum": 19028.5,
+      "perf_eur": 1636.79,
+      "perf_pct": 0.0928370724
+    },
+    {
+      "date": "2024-07-28",
+      "period": "2024-07",
+      "contrib_cum": 18355.78,
+      "dividends_net": 87.34,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 19706.26,
+      "realized_cum_net": 1485.06,
+      "realized_pct": 0.0809042165,
+      "invested_cum": 19840.84,
+      "perf_eur": 1350.48,
+      "perf_pct": 0.073572466
+    },
+    {
+      "date": "2024-08-28",
+      "period": "2024-08",
+      "contrib_cum": 19080.78,
+      "dividends_net": 15.42,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 21181.329999999998,
+      "realized_cum_net": 1500.48,
+      "realized_pct": 0.0786382947,
+      "invested_cum": 20581.26,
+      "perf_eur": 2100.55,
+      "perf_pct": 0.1100872187
+    },
+    {
+      "date": "2024-09-28",
+      "period": "2024-09",
+      "contrib_cum": 19805.78,
+      "dividends_net": 68.33,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 21816.660000000003,
+      "realized_cum_net": 1568.81,
+      "realized_pct": 0.0792097054,
+      "invested_cum": 21374.59,
+      "perf_eur": 2010.88,
+      "perf_pct": 0.1015299574
+    },
+    {
+      "date": "2024-10-28",
+      "period": "2024-10",
+      "contrib_cum": 20530.78,
+      "dividends_net": 27.67,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 22819.003999999997,
+      "realized_cum_net": 1596.48,
+      "realized_pct": 0.0777603189,
+      "invested_cum": 22127.26,
+      "perf_eur": 2288.224,
+      "perf_pct": 0.1114533398
+    },
+    {
+      "date": "2024-11-28",
+      "period": "2024-11",
+      "contrib_cum": 21255.78,
+      "dividends_net": 186.7,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 24687.030000000002,
+      "realized_cum_net": 1783.18,
+      "realized_pct": 0.0838915344,
+      "invested_cum": 23038.96,
+      "perf_eur": 3431.25,
+      "perf_pct": 0.1614266802
+    },
+    {
+      "date": "2024-12-28",
+      "period": "2024-12",
+      "contrib_cum": 25045.78,
+      "dividends_net": 25.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 27877.03,
+      "realized_cum_net": 1808.18,
+      "realized_pct": 0.0721949965,
+      "invested_cum": 26853.96,
+      "perf_eur": 2831.25,
+      "perf_pct": 0.1130429957
+    },
+    {
+      "date": "2024-12-31",
+      "period": "2024",
+      "contrib_cum": 25045.78,
+      "dividends_net": 1077.973,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 27877.03,
+      "realized_cum_net": 2886.153,
+      "realized_pct": 0.1152351015,
+      "invested_cum": 27931.933,
+      "perf_eur": 2831.25,
+      "perf_pct": 0.1130429957
+    },
+    {
+      "date": "2025-01-28",
+      "period": "2025-01",
+      "contrib_cum": 26145.78,
+      "dividends_net": 71.64,
+      "cap_gains_net": 232.5,
+      "market_value_gross": 28905.0,
+      "realized_cum_net": 3190.293,
+      "realized_pct": 0.1220194234,
+      "invested_cum": 29336.073,
+      "perf_eur": 2759.22,
+      "perf_pct": 0.1055321356
+    },
+    {
+      "date": "2025-02-28",
+      "period": "2025-02",
+      "contrib_cum": 27045.78,
+      "dividends_net": 5.382,
+      "cap_gains_net": 52.0,
+      "market_value_gross": 30138.0,
+      "realized_cum_net": 3247.675,
+      "realized_pct": 0.1200806558,
+      "invested_cum": 30293.455,
+      "perf_eur": 3092.22,
+      "perf_pct": 0.114332809
+    },
+    {
+      "date": "2025-03-28",
+      "period": "2025-03",
+      "contrib_cum": 27945.78,
+      "dividends_net": 75.34100000000001,
+      "cap_gains_net": 12.6,
+      "market_value_gross": 30800.0,
+      "realized_cum_net": 3335.616,
+      "realized_pct": 0.1193602755,
+      "invested_cum": 31281.396,
+      "perf_eur": 2854.22,
+      "perf_pct": 0.1021342042
+    },
+    {
+      "date": "2025-04-28",
+      "period": "2025-04",
+      "contrib_cum": 28845.78,
+      "dividends_net": 61.265,
+      "cap_gains_net": 2.4,
+      "market_value_gross": 30094.0,
+      "realized_cum_net": 3399.281,
+      "realized_pct": 0.1178432686,
+      "invested_cum": 32245.061,
+      "perf_eur": 1248.22,
+      "perf_pct": 0.0432721875
+    },
+    {
+      "date": "2025-05-28",
+      "period": "2025-05",
+      "contrib_cum": 29745.78,
+      "dividends_net": 582.219,
+      "cap_gains_net": 69.2,
+      "market_value_gross": 32754.0,
+      "realized_cum_net": 4050.7,
+      "realized_pct": 0.1361772998,
+      "invested_cum": 33796.48,
+      "perf_eur": 3008.22,
+      "perf_pct": 0.101130984
+    },
+    {
+      "date": "2025-06-28",
+      "period": "2025-06",
+      "contrib_cum": 30695.78,
+      "dividends_net": 210.033,
+      "cap_gains_net": 97.2,
+      "market_value_gross": 34412.08,
+      "realized_cum_net": 4357.933,
+      "realized_pct": 0.1419717303,
+      "invested_cum": 35053.713,
+      "perf_eur": 3716.3,
+      "perf_pct": 0.1210687593
+    },
+    {
+      "date": "2025-07-28",
+      "period": "2025-07",
+      "contrib_cum": 31595.78,
+      "dividends_net": 134.73,
+      "cap_gains_net": 185.7,
+      "market_value_gross": 36425.0,
+      "realized_cum_net": 4678.363,
+      "realized_pct": 0.1480692358,
+      "invested_cum": 36274.143,
+      "perf_eur": 4829.22,
+      "perf_pct": 0.1528438291
+    },
+    {
+      "date": "2025-08-28",
+      "period": "2025-08",
+      "contrib_cum": 32495.78,
+      "dividends_net": 6.426,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 36876.0,
+      "realized_cum_net": 4684.789,
+      "realized_pct": 0.1441660733,
+      "invested_cum": 37180.569,
+      "perf_eur": 4380.22,
+      "perf_pct": 0.1347935024
+    },
+    {
+      "date": "2025-09-28",
+      "period": "2025-09",
+      "contrib_cum": 33395.78,
+      "dividends_net": 105.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 38358.191999999995,
+      "realized_cum_net": 4789.789,
+      "realized_pct": 0.1434249776,
+      "invested_cum": 38185.569,
+      "perf_eur": 4962.412,
+      "perf_pct": 0.148593984
+    },
+    {
+      "date": "2025-10-28",
+      "period": "2025-10",
+      "contrib_cum": 34295.78,
+      "dividends_net": 41.4,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 38891.0,
+      "realized_cum_net": 4831.189,
+      "realized_pct": 0.1408683226,
+      "invested_cum": 39126.969,
+      "perf_eur": 4595.22,
+      "perf_pct": 0.1339879134
+    },
+    {
+      "date": "2025-11-28",
+      "period": "2025-11",
+      "contrib_cum": 35195.78,
+      "dividends_net": 297.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 40089.954999999994,
+      "realized_cum_net": 5128.189,
+      "realized_pct": 0.1457046555,
+      "invested_cum": 40323.969,
+      "perf_eur": 4894.175,
+      "perf_pct": 0.1390557334
+    },
+    {
+      "date": "2025-12-28",
+      "period": "2025-12",
+      "contrib_cum": 36095.78,
+      "dividends_net": 42.0,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 41491.06,
+      "realized_cum_net": 5170.189,
+      "realized_pct": 0.1432352757,
+      "invested_cum": 41265.969,
+      "perf_eur": 5395.28,
+      "perf_pct": 0.1494712124
+    },
+    {
+      "date": "2025-12-31",
+      "period": "2025",
+      "contrib_cum": 36095.78,
+      "dividends_net": 1632.436,
+      "cap_gains_net": 651.5999999999999,
+      "market_value_gross": 41491.06,
+      "realized_cum_net": 7454.225,
+      "realized_pct": 0.2065123679,
+      "invested_cum": 43550.005,
+      "perf_eur": 5395.28,
+      "perf_pct": 0.1494712124
+    },
+    {
+      "date": "2026-01-28",
+      "period": "2026-01",
+      "contrib_cum": 37270.78,
+      "dividends_net": 106.974,
+      "cap_gains_net": 0.0,
+      "market_value_gross": 42691.95,
+      "realized_cum_net": 7561.199,
+      "realized_pct": 0.2028720354,
+      "invested_cum": 44831.979,
+      "perf_eur": 5421.17,
+      "perf_pct": 0.1454536235
+    }
+  ]
+}
