@@ -62,7 +62,7 @@ function initTabs(){
 
 let chartValue, chartPerf, chartContrib, chartDividends;
 let fullPerfData = [];
-let currentFilters = { value: 'MAX', perf: 'MAX', dividends: 'MAX' };
+let currentFilters = { value: '1Y', perf: '1Y', dividends: '1Y' };
 
 function filterByRange(data, range) {
   if (range === 'MAX' || !data.length) return data;
