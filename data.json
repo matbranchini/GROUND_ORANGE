@@ -8,92 +8,80 @@
     {
       "id": "matteo",
       "name": "Matteo",
-      "contributions_total": 6677.889999999999,
-      "ownership_pct": 0.17845405681014664
-    },
-    {
-      "id": "volpin",
-      "name": "Volpin",
-      "contributions_total": 3477.89,
-      "ownership_pct": 0.09294007233414162
+      "contributions_total": 6828,
+      "ownership_pct": 0.178
     },
     {
       "id": "robert",
       "name": "Robert",
-      "contributions_total": 3150.0,
-      "ownership_pct": 0.08417782846856747
+      "contributions_total": 3225,
+      "ownership_pct": 0.084
     },
     {
       "id": "paolo",
       "name": "Paolo",
-      "contributions_total": 3475.0,
-      "ownership_pct": 0.09286284251691172
+      "contributions_total": 3575,
+      "ownership_pct": 0.093
     },
     {
       "id": "elisa",
       "name": "Elisa",
-      "contributions_total": 2775.0,
-      "ownership_pct": 0.07415665841278563
+      "contributions_total": 2850,
+      "ownership_pct": 0.074
     },
     {
       "id": "ornella",
       "name": "Ornella",
-      "contributions_total": 5815.0,
-      "ownership_pct": 0.15539494366499043
+      "contributions_total": 5890,
+      "ownership_pct": 0.154
     },
     {
       "id": "palma",
       "name": "Palma",
-      "contributions_total": 2900.0,
-      "ownership_pct": 0.07749704843137957
+      "contributions_total": 4789,
+      "ownership_pct": 0.125
     },
     {
       "id": "giuseppe",
       "name": "Giuseppe",
-      "contributions_total": 2900.0,
-      "ownership_pct": 0.07749704843137957
+      "contributions_total": 4789,
+      "ownership_pct": 0.125
     },
     {
       "id": "loretta-daniele",
       "name": "Loretta & Daniele",
-      "contributions_total": 200.0,
-      "ownership_pct": 0.005344624029750315
+      "contributions_total": 200,
+      "ownership_pct": 0.005
     },
     {
       "id": "emma",
       "name": "Emma",
-      "contributions_total": 1750.0,
-      "ownership_pct": 0.04676546026031526
+      "contributions_total": 1750,
+      "ownership_pct": 0.046
     },
     {
       "id": "luca",
       "name": "Luca",
-      "contributions_total": 1750.0,
-      "ownership_pct": 0.04676546026031526
-    },
-    {
-      "id": "antonio",
-      "name": "Antonio",
-      "contributions_total": 0.0,
-      "ownership_pct": 0.0
+      "contributions_total": 1750,
+      "ownership_pct": 0.046
     },
     {
       "id": "adele",
       "name": "Adele",
-      "contributions_total": 400.0,
-      "ownership_pct": 0.01068924805950063
+      "contributions_total": 400,
+      "ownership_pct": 0.010
     },
     {
       "id": "dominic",
       "name": "Dominic",
-      "contributions_total": 1500.0,
-      "ownership_pct": 0.04008468022312737
+      "contributions_total": 1600,
+      "ownership_pct": 0.042
     },
     {
       "id": "luigi-manuela",
       "name": "Luigi & Manuela",
-      "contributions_total": 650.0,
-      "ownership_pct": 0.017370028096688524
+      "contributions_total": 700,
+      "ownership_pct": 0.018
     }
   ],
   "transactions": [
@@ -3403,6 +3391,19 @@
       "invested_cum": 44831.979,
       "perf_eur": 5421.17,
       "perf_pct": 0.1454536235
+    },
+    {
+      "date": "2026-02-28",
+      "period": "2026-02",
+      "contrib_cum": 38346,
+      "dividends_net": 0,
+      "cap_gains_net": 53,
+      "market_value_gross": 43835,
+      "realized_cum_net": 3887,
+      "realized_pct": 0.101,
+      "invested_cum": 42233,
+      "perf_eur": 5489,
+      "perf_pct": 0.143
     }
   ] 
 }

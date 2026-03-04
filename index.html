@@ -19,7 +19,6 @@
       <button class="tab active" data-tab="dashboard">Dashboard</button>
       <button class="tab" data-tab="investors">Investitori</button>
       <button class="tab" data-tab="performance">Performance</button>
-      <button class="tab" data-tab="data">Dati</button>
     </nav>
   </header>
 
@@ -128,17 +127,6 @@
         </div>
       </div>
 
-      <div class="card">
-        <h2>Aggiungi contribuzione (salvata in localStorage)</h2>
-        <form id="formContribution" class="form">
-          <label>Investitore<select id="contribInvestor" required></select></label>
-          <label>Data<input id="contribDate" type="date" required /></label>
-          <label>Importo (EUR)<input id="contribAmount" type="number" step="0.01" required /></label>
-          <label>Nota<input id="contribNote" type="text" placeholder="opzionale" /></label>
-          <button type="submit">Aggiungi</button>
-          <button type="button" class="secondary" id="btnClearLocal">Reset localStorage</button>
-        </form>
-      </div>
     </section>
 
     <section id="performance" class="panel">
@@ -155,20 +143,6 @@
       </div>
     </section>
 
-    <section id="data" class="panel">
-      <div class="card">
-        <h2>data.json</h2>
-        <pre id="jsonView" class="json"></pre>
-      </div>
-      <div class="card">
-        <h2>Come aggiornare</h2>
-        <ol>
-          <li>Modifica <code>data.json</code> nel repo</li>
-          <li>Commit & push</li>
-          <li>GitHub Pages aggiorna il sito</li>
-        </ol>
-      </div>
-    </section>
   </main>
 
   <footer class="footer"><span class="muted">Ground Orange</span></footer>

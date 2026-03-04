@@ -21,7 +21,11 @@ function mergeData(base,ov){
 function perfDerived(snaps){
   let realized=0; const out=[];
   for(const s of snaps){
-    realized += Number(s.dividends_net||0)+Number(s.cap_gains_net||0);
+    // Escludi i resoconti annuali (period length = 4 come "2023", "2024") dal calcolo realized
+    const isYearlySummary = s.period && s.period.length === 4;
+    if (!isYearlySummary) {
+      realized += Number(s.dividends_net||0)+Number(s.cap_gains_net||0);
+    }
     const A=Number(s.contrib_cum||0); const G=Number(s.market_value_gross||0);
     const H=G-A; const I=A?H/A:0;
     out.push({...s, realized_cum_net:realized, realized_pct:A?realized/A:0, invested_cum:A+realized, perf_eur:H, perf_pct:I});
@@ -125,35 +129,40 @@ function renderDividendsChart(perf) {
   
   // Calculate partial year from monthly data (for current year without summary)
   const monthlyRecords = perf.filter(s => s.period && s.period.length === 7); // "2026-01" format
-  const partialYearMap = new Map();
+  const partialYearDivMap = new Map();
+  const partialYearCGMap = new Map();
   for (const s of monthlyRecords) {
     const year = s.period.substring(0, 4);
     if (!yearsWithSummary.has(year)) {
-      partialYearMap.set(year, (partialYearMap.get(year) || 0) + Number(s.dividends_net || 0));
+      partialYearDivMap.set(year, (partialYearDivMap.get(year) || 0) + Number(s.dividends_net || 0));
+      partialYearCGMap.set(year, (partialYearCGMap.get(year) || 0) + Number(s.cap_gains_net || 0));
     }
   }
   
   // Combine yearly summaries + partial years
   let years = yearlyRecords.map(s => s.period);
   let yearlyDividends = yearlyRecords.map(s => Number(s.dividends_net || 0));
+  let yearlyCapGains = yearlyRecords.map(s => Number(s.cap_gains_net || 0));
   
   // Add partial years (like 2026)
-  for (const [year, div] of partialYearMap) {
+  for (const [year, div] of partialYearDivMap) {
     years.push(year);
     yearlyDividends.push(div);
+    yearlyCapGains.push(partialYearCGMap.get(year) || 0);
   }
   
   // Sort by year
-  const combined = years.map((y, i) => ({ year: y, div: yearlyDividends[i] })).sort((a, b) => a.year.localeCompare(b.year));
+  const combined = years.map((y, i) => ({ year: y, div: yearlyDividends[i], cg: yearlyCapGains[i] })).sort((a, b) => a.year.localeCompare(b.year));
   years = combined.map(c => c.year);
   yearlyDividends = combined.map(c => c.div);
+  yearlyCapGains = combined.map(c => c.cg);
   
   // Calculate cumulative
   let cumDiv = 0;
-  const cumDividends = yearlyDividends.map(v => {
-    cumDiv += v;
-    return cumDiv;
-  });
+  let cumCG = 0;
+  const cumDividends = yearlyDividends.map(v => { cumDiv += v; return cumDiv; });
+  const cumCapGains = yearlyCapGains.map(v => { cumCG += v; return cumCG; });
+  const cumTotal = cumDividends.map((v, i) => v + cumCapGains[i]);
   
   chartDividends?.destroy();
   chartDividends = new Chart(document.getElementById('chartDividends'), {
@@ -161,11 +170,19 @@ function renderDividendsChart(perf) {
     data: {
       labels: years,
       datasets: [
-        { label: 'Dividendi Anno (Netto)', data: yearlyDividends, borderWidth: 1, order: 2 },
-        { label: 'Dividendi CUM (Netto)', data: cumDividends, type: 'line', borderWidth: 2, order: 1 }
+        { label: 'Dividendi Anno', data: yearlyDividends, backgroundColor: 'rgba(54, 162, 235, 0.7)', borderWidth: 1, order: 3 },
+        { label: 'Plusvalenze Anno', data: yearlyCapGains, backgroundColor: 'rgba(255, 159, 64, 0.7)', borderWidth: 1, order: 3 },
+        { label: 'Ricavi CUM (Netto)', data: cumTotal, type: 'line', borderColor: 'rgba(75, 192, 192, 1)', borderWidth: 2, order: 1, fill: false }
       ]
     },
-    options: { responsive: true, maintainAspectRatio: false, scales: { x: { display: true } } }
+    options: { 
+      responsive: true, 
+      maintainAspectRatio: false, 
+      scales: { 
+        x: { display: true, stacked: true }, 
+        y: { stacked: true } 
+      } 
+    }
   });
 }
 
@@ -227,12 +244,9 @@ function renderInvestorsTable(investors,totals,totalFund){
   }
 }
 function fillInvestorSelect(investors){
-  const sel=document.getElementById('contribInvestor'); sel.innerHTML='';
-  for(const inv of investors){
-    const o=document.createElement('option'); o.value=inv.id; o.textContent=inv.name; sel.appendChild(o);
-  }
+  /* rimosso - select non più presente */
 }
-function renderJson(data){document.getElementById('jsonView').textContent=JSON.stringify(data,null,2);}
+function renderJson(data){/* rimosso */}
 
 function renderAll(data){
   const perf=perfDerived(data.market_snapshots);
@@ -254,15 +268,16 @@ function renderAll(data){
       <div class="kpi-tooltip-row"><span>H = G - A:</span><span>${fmtE(H)}</span></div>
       <div class="kpi-tooltip-row total"><span>I = H / A:</span><span>${fmtP(A ? H/A : 0)}</span></div>
     `;
-    // Calculate totals for tooltip
-    const totalDiv = data.market_snapshots.reduce((sum, s) => sum + Number(s.dividends_net || 0), 0);
-    const totalCG = data.market_snapshots.reduce((sum, s) => sum + Number(s.cap_gains_net || 0), 0);
+    // Calculate totals for tooltip - solo dati mensili, escludi resoconti annuali
+    const monthlySnapshots = data.market_snapshots.filter(s => !s.period || s.period.length !== 4);
+    const totalDiv = monthlySnapshots.reduce((sum, s) => sum + Number(s.dividends_net || 0), 0);
+    const totalCG = monthlySnapshots.reduce((sum, s) => sum + Number(s.cap_gains_net || 0), 0);
     document.getElementById('kpi-realized-tooltip').innerHTML = `
       <div class="kpi-tooltip-title">Dettaglio Ricavi Realizzati</div>
       <div class="kpi-tooltip-row"><span>Dividendi Netto:</span><span>${fmtE(totalDiv)}</span></div>
       <div class="kpi-tooltip-row"><span>Plusvalenze Netto:</span><span>${fmtE(totalCG)}</span></div>
       <div class="kpi-tooltip-row total"><span>Totale CUM:</span><span>${fmtE(totalDiv + totalCG)}</span></div>
-      <div class="kpi-tooltip-note">Somma cumulativa di tutti i dividendi e plusvalenze nette dall'inizio</div>
+      <div class="kpi-tooltip-note">Somma mensile di dividendi e plusvalenze (esclusi resoconti annuali)</div>
     `;
     renderCharts(perf);
     renderSnapshotsTable(perf);
@@ -276,16 +291,7 @@ function renderAll(data){
 }
 
 function wireForms(getData){
-  document.getElementById('formContribution').addEventListener('submit',(e)=>{
-    e.preventDefault();
-    const ov=loadOverrides();
-    ov.transactions=ov.transactions||[];
-    ov.transactions.push({type:'contribution',investor_id:contribInvestor.value,date:contribDate.value,amount:Number(contribAmount.value),currency:'EUR',note:contribNote.value||''});
-    saveOverrides(ov);
-    renderAll(getData());
-    e.target.reset();
-  });
-  document.getElementById('btnClearLocal').addEventListener('click',()=>{localStorage.removeItem(STORAGE_KEY);renderAll(getData(true));});
+  /* rimosso - form non più presente */
 }
 
 (async function(){
