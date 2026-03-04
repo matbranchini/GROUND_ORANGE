@@ -235,8 +235,9 @@ function renderInvestorsTable(investors,totals,totalFund){
   const sorted=[...investors].sort((a,b)=>(totals.get(b.id)||0)-(totals.get(a.id)||0));
   for(const inv of sorted){
     const t=totals.get(inv.id)||0;
+    const pct=Number(inv.ownership_pct||0);
     const tr=document.createElement('tr');
-    tr.innerHTML=`<td>${inv.name}</td><td>${fmtE(t)}</td><td>${fmtP(totalFund?t/totalFund:0)}</td>`;
+    tr.innerHTML=`<td>${inv.name}</td><td>${fmtE(t)}</td><td>${fmtP(pct)}</td>`;
     tbody.appendChild(tr);
   }
 }
