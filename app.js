@@ -44,11 +44,8 @@ function groupContrib(transactions){
 }
 
 function investorTotals(investors,transactions){
-  const totals=new Map(investors.map(i=>[i.id,0]));
-  for(const t of transactions){
-    if(t.type!=='contribution') continue;
-    totals.set(t.investor_id,(totals.get(t.investor_id)||0)+Number(t.amount||0));
-  }
+  // Usa direttamente contributions_total e ownership_pct dagli investors
+  const totals=new Map(investors.map(i=>[i.id, Number(i.contributions_total || 0)]));
   const totalFund=[...totals.values()].reduce((a,b)=>a+b,0);
   return {totals,totalFund};
 }
