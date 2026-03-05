@@ -41,9 +41,12 @@ function parseNumber(cellValue) {
 
 async function fetchGoogleSheetLiveData() {
   try {
-    // Legge il foglio come CSV
-    const sheetUrl = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/export?format=csv`;
-    const res = await fetch(sheetUrl);
+    // Usa l'URL pubblico "Publish to web" che supporta CORS
+    // Formato: https://docs.google.com/spreadsheets/d/e/2PACX-.../pub?output=csv
+    // Fallback: usa gviz/tq che funziona meglio con CORS
+    const sheetUrl = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/gviz/tq?tqx=out:csv`;
+    const res = await fetch(sheetUrl, { mode: 'cors' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const csv = await res.text();
     
     // Parsa CSV - split per righe
