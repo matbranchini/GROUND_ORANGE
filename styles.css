@@ -13,6 +13,7 @@ code{background:#0f1422;padding:2px 6px;border-radius:6px;border:1px solid var(-
 .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin:14px 0}
 .card h2{margin:0 0 10px;font-size:16px}
 .kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kpi-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .kpi{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
 .kpi-label{color:var(--muted);font-size:12px}
 .kpi-value{font-size:22px;font-weight:700;margin-top:6px}
@@ -31,7 +32,7 @@ button.secondary{background:transparent}
 .muted{color:var(--muted);font-size:12px}
 .json{max-height:520px;overflow:auto;background:#0f1422;border:1px solid var(--border);border-radius:12px;padding:12px}
 .footer{padding:16px 20px;border-top:1px solid var(--border)}
-@media (max-width: 980px){.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-2{grid-template-columns:1fr}.form{grid-template-columns:1fr 1fr}}
+@media (max-width: 980px){.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-2{grid-template-columns:1fr}.form{grid-template-columns:1fr 1fr}}
 @media (max-width: 520px){.form{grid-template-columns:1fr}}
 
 .chart-container{position:relative;width:100%;min-height:200px;height:250px}
@@ -64,3 +65,16 @@ button.secondary{background:transparent}
 .notes-list{margin:0;padding-left:20px;color:var(--muted);font-size:13px;line-height:1.7}
 .notes-list li{margin:4px 0}
 .notes-list strong{color:var(--text)}
+
+/* Live tab styles */
+.kpi-live{background:linear-gradient(135deg,#1a4d1a 0%,#0d260d 100%);border-color:#2d5a2d}
+.kpi-live .kpi-value{color:#4ade80;font-size:28px}
+.kpi-perf{background:linear-gradient(135deg,#1a3d4d 0%,#0d1f26 100%);border-color:#2d4a5a}
+.kpi-perf .kpi-value{color:#60a5fa}
+.btn-refresh{padding:8px 16px;font-size:12px;border:1px solid var(--accent);background:transparent;color:var(--accent);border-radius:8px;cursor:pointer;transition:all 0.2s}
+.btn-refresh:hover{background:var(--accent);color:var(--text)}
+.live-info-card{text-align:center;padding:20px}
+.live-info-card p{margin-bottom:12px}
+.positive{color:#4ade80}
+.negative{color:#f87171}
+#tableLive{min-width:600px}

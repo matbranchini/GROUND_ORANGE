@@ -6,6 +6,114 @@ const d=(s)=>new Date(s+'T00:00:00');
 const fmtE=(v)=>eurFmt.format(Number(v||0));
 const fmtP=(v)=>pctFmt.format(Number(v||0));
 
+// Google Sheet ID per dati live
+const GOOGLE_SHEET_ID = '1-3VnoZFcq42JWV0uzHbrP-aFe5mr8UfWfXsd6WwgYKE';
+
+function parseCSVRow(line) {
+  const cells = [];
+  let current = '';
+  let inQuotes = false;
+  
+  for (let c = 0; c < line.length; c++) {
+    const char = line[c];
+    if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === ',' && !inQuotes) {
+      cells.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  cells.push(current.trim());
+  return cells;
+}
+
+function parseNumber(cellValue) {
+  if (!cellValue || cellValue === '') return null;
+  // Rimuovi virgolette e simboli
+  let clean = cellValue.replace(/"/g, '').replace(/[€$£%\s]/g, '');
+  // Formato italiano: "39.646,07871" -> 39646.07871 o "39646,07871" -> 39646.07871
+  clean = clean.replace(/\./g, '').replace(',', '.');
+  const num = parseFloat(clean);
+  return isNaN(num) ? null : num;
+}
+
+async function fetchGoogleSheetLiveData() {
+  try {
+    // Legge il foglio come CSV
+    const sheetUrl = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/export?format=csv`;
+    const res = await fetch(sheetUrl);
+    const csv = await res.text();
+    
+    // Parsa CSV - split per righe
+    const lines = csv.split('\n');
+    
+    // Riga 30 = indice 29 (0-based)
+    const targetRow = 29;
+    if (lines.length <= targetRow) {
+      console.error('Riga 30 non trovata, righe totali:', lines.length);
+      return null;
+    }
+    
+    const cells = parseCSVRow(lines[targetRow]);
+    
+    // I30 = indice 8 (Valore di Mercato LIVE)
+    // K30 = indice 10 (Performance giornaliera in euro)
+    const marketValue = parseNumber(cells[8]);     // I30
+    const dailyPerfEur = parseNumber(cells[10]);   // K30
+    
+    console.log('Riga 30:', lines[targetRow]);
+    console.log('I30 (index 8):', cells[8], '→', marketValue);
+    console.log('K30 (index 10):', cells[10], '→', dailyPerfEur);
+    
+    return { marketValue, dailyPerfPct: dailyPerfEur };
+  } catch(e) {
+    console.error('Errore fetch Google Sheet:', e);
+    return null;
+  }
+}
+
+async function renderLive(contribCum) {
+  document.getElementById('kpi-live-total').textContent = 'Caricamento...';
+  
+  const data = await fetchGoogleSheetLiveData();
+  
+  // Contribuzioni Totali (dal data.json)
+  document.getElementById('kpi-live-contrib').textContent = fmtE(contribCum);
+  
+  if (data && data.marketValue) {
+    // Valore di Mercato LIVE (I30)
+    document.getElementById('kpi-live-total').textContent = fmtE(data.marketValue);
+    
+    // Performance LIVE TOTALE = (marketValue / contribCum) - 1
+    if (contribCum && contribCum > 0) {
+      const perfTotalPct = (data.marketValue / contribCum) - 1;
+      const perfTotalEur = data.marketValue - contribCum;
+      document.getElementById('kpi-live-perf').textContent = fmtP(perfTotalPct);
+      document.getElementById('kpi-live-perf-eur').textContent = fmtE(perfTotalEur);
+    }
+    
+    // Performance LIVE Giornaliera (K30 = ammontare in €, calcola % su I30)
+    if (data.dailyPerfPct !== null && data.marketValue) {
+      // K30 è l'ammontare in euro della performance giornaliera
+      const dailyPerfEur = data.dailyPerfPct; // K30 è già in euro
+      // Calcola percentuale: (K30 / I30) * 100
+      const dailyPerfPct = (dailyPerfEur / data.marketValue);
+      
+      document.getElementById('kpi-live-daily').textContent = fmtP(dailyPerfPct);
+      document.getElementById('kpi-live-daily-eur').textContent = fmtE(dailyPerfEur);
+    }
+    
+    const now = new Date();
+    document.getElementById('kpi-live-time').textContent = now.toLocaleString('it-IT');
+  } else {
+    // Fallback ai dati dell'ultimo snapshot
+    document.getElementById('kpi-live-total').textContent = 'Dati non disponibili';
+    document.getElementById('kpi-live-total').style.fontSize = '16px';
+  }
+}
+
 function loadOverrides(){
   try{const raw=localStorage.getItem(STORAGE_KEY);return raw?JSON.parse(raw):{transactions:[],market_snapshots:[]};}
   catch{return {transactions:[],market_snapshots:[]};}
@@ -63,7 +171,7 @@ function initTabs(){
 
 let chartValue, chartPerf, chartContrib, chartDividends;
 let fullPerfData = [];
-let currentFilters = { value: '1Y', perf: '1Y', dividends: '1Y' };
+let currentFilters = { value: '1Y', perf: '1Y', dividends: '5Y' };
 
 function filterByRange(data, range) {
   if (range === 'MAX' || !data.length) return data;
@@ -78,6 +186,18 @@ function filterByRange(data, range) {
     default: return data;
   }
   return data.filter(x => d(x.date) >= cutoff);
+}
+
+function filterYearsByRange(range) {
+  const now = new Date();
+  let minYear;
+  switch(range) {
+    case '1Y': minYear = now.getFullYear() - 1; break;
+    case '3Y': minYear = now.getFullYear() - 3; break;
+    case '5Y': minYear = now.getFullYear() - 5; break;
+    default: minYear = 0; // MAX
+  }
+  return minYear;
 }
 
 function renderValueChart(perf) {
@@ -118,8 +238,12 @@ function renderPerfChart(perf) {
 }
 
 function renderDividendsChart(perf) {
+  // Applica filtro temporale basato su anni
+  const range = currentFilters.dividends || '5Y';
+  const minYear = filterYearsByRange(range);
+  
   // Get yearly records (period length = 4 means year only like "2023")
-  const yearlyRecords = perf.filter(s => s.period && s.period.length === 4);
+  const yearlyRecords = perf.filter(s => s.period && s.period.length === 4 && parseInt(s.period) >= minYear);
   
   // Get years that have yearly summaries
   const yearsWithSummary = new Set(yearlyRecords.map(s => s.period));
@@ -130,7 +254,7 @@ function renderDividendsChart(perf) {
   const partialYearCGMap = new Map();
   for (const s of monthlyRecords) {
     const year = s.period.substring(0, 4);
-    if (!yearsWithSummary.has(year)) {
+    if (!yearsWithSummary.has(year) && parseInt(year) >= minYear) {
       partialYearDivMap.set(year, (partialYearDivMap.get(year) || 0) + Number(s.dividends_net || 0));
       partialYearCGMap.set(year, (partialYearCGMap.get(year) || 0) + Number(s.cap_gains_net || 0));
     }
@@ -301,4 +425,20 @@ function wireForms(getData){
   fillInvestorSelect(data.investors);
   wireForms(getData);
   renderAll(data);
+  
+  // Live tab - get contrib_cum from last snapshot
+  const perf = perfDerived(data.market_snapshots);
+  const contribCum = perf.length ? perf[perf.length-1].contrib_cum : 0;
+  
+  // Refresh button
+  document.getElementById('refresh-live-btn')?.addEventListener('click', () => renderLive(contribCum));
+  
+  // Auto-load when switching to Live tab
+  document.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.tab === 'live') {
+        renderLive(contribCum);
+      }
+    });
+  });
 })();

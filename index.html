@@ -17,6 +17,7 @@
     </div>
     <nav class="tabs" role="tablist">
       <button class="tab active" data-tab="dashboard">Dashboard</button>
+      <button class="tab" data-tab="live">Live</button>
       <button class="tab" data-tab="investors">Investitori</button>
       <button class="tab" data-tab="performance">Performance</button>
     </nav>
@@ -73,13 +74,11 @@
 
       <div class="card">
         <div class="card-header">
-          <h2>Dividendi (Netto)</h2>
+          <h2>Ricavi Realizzati (Netto)</h2>
           <div class="chart-filters" data-chart="dividends">
-            <button class="filter-btn" data-range="1M">1M</button>
-            <button class="filter-btn" data-range="YTD">YTD</button>
-            <button class="filter-btn active" data-range="1Y">1Y</button>
+            <button class="filter-btn" data-range="1Y">1Y</button>
             <button class="filter-btn" data-range="3Y">3Y</button>
-            <button class="filter-btn" data-range="5Y">5Y</button>
+            <button class="filter-btn active" data-range="5Y">5Y</button>
             <button class="filter-btn" data-range="MAX">MAX</button>
           </div>
         </div>
@@ -106,6 +105,34 @@
           <li><strong>Valore di mercato PTF</strong> è una fotografia (lorda) a fine mese del valore del portafoglio investito</li>
           <li>La <strong>tassazione sulle plusvalenze finanziarie</strong> equivale a 26% per azioni/ETF/lending immobiliare e 12,5% per titoli di stato</li>
         </ul>
+      </div>
+    </section>
+
+    <section id="live" class="panel">
+      <div class="kpi-grid">
+        <div class="kpi kpi-live">
+          <div class="kpi-label">💰 Valore di Mercato LIVE</div>
+          <div class="kpi-value" id="kpi-live-total">Caricamento...</div>
+          <div class="kpi-sub">Aggiornato: <span id="kpi-live-time">—</span></div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">📥 Contribuzioni Totali</div>
+          <div class="kpi-value" id="kpi-live-contrib">—</div>
+        </div>
+        <div class="kpi kpi-perf">
+          <div class="kpi-label">📈 Performance LIVE TOTALE</div>
+          <div class="kpi-value" id="kpi-live-perf">—</div>
+          <div class="kpi-sub" id="kpi-live-perf-eur">—</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">📊 Performance LIVE Giornaliera</div>
+          <div class="kpi-value" id="kpi-live-daily">—</div>
+          <div class="kpi-sub" id="kpi-live-daily-eur">—</div>
+        </div>
+      </div>
+      <div class="card live-info-card">
+        <p class="muted">🔄 Dati live da Google Sheets con prezzi Google Finance.</p>
+        <button id="refresh-live-btn" class="btn-refresh">🔄 Aggiorna</button>
       </div>
     </section>
 
