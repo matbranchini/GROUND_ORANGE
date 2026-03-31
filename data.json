@@ -8,44 +8,44 @@
     {
       "id": "matteo",
       "name": "Matteo",
-      "contributions_total": 6828,
-      "ownership_pct": 0.178
+      "contributions_total": 6978,
+      "ownership_pct": 0.179
     },
     {
       "id": "robert",
       "name": "Robert",
-      "contributions_total": 3225,
-      "ownership_pct": 0.084
+      "contributions_total": 3300,
+      "ownership_pct": 0.085
     },
     {
       "id": "paolo",
       "name": "Paolo",
-      "contributions_total": 3575,
-      "ownership_pct": 0.093
+      "contributions_total": 3675,
+      "ownership_pct": 0.094
     },
     {
       "id": "elisa",
       "name": "Elisa",
-      "contributions_total": 2850,
-      "ownership_pct": 0.074
+      "contributions_total": 2925,
+      "ownership_pct": 0.075
     },
     {
       "id": "ornella",
       "name": "Ornella",
-      "contributions_total": 5890,
-      "ownership_pct": 0.154
+      "contributions_total": 5965,
+      "ownership_pct": 0.153
     },
     {
       "id": "palma",
       "name": "Palma",
       "contributions_total": 4789,
-      "ownership_pct": 0.125
+      "ownership_pct": 0.123
     },
     {
       "id": "giuseppe",
       "name": "Giuseppe",
       "contributions_total": 4789,
-      "ownership_pct": 0.125
+      "ownership_pct": 0.123
     },
     {
       "id": "loretta-daniele",
@@ -57,13 +57,19 @@
       "id": "emma",
       "name": "Emma",
       "contributions_total": 1750,
-      "ownership_pct": 0.046
+      "ownership_pct": 0.045
     },
     {
       "id": "luca",
       "name": "Luca",
       "contributions_total": 1750,
-      "ownership_pct": 0.046
+      "ownership_pct": 0.045
+    },
+    {
+      "id": "elisa-r",
+      "name": "Elisa R",
+      "contributions_total": 15,
+      "ownership_pct": 0.000
     },
     {
       "id": "adele",
@@ -74,14 +80,14 @@
     {
       "id": "dominic",
       "name": "Dominic",
-      "contributions_total": 1600,
-      "ownership_pct": 0.042
+      "contributions_total": 1700,
+      "ownership_pct": 0.044
     },
     {
       "id": "luigi-manuela",
       "name": "Luigi & Manuela",
-      "contributions_total": 700,
-      "ownership_pct": 0.018
+      "contributions_total": 750,
+      "ownership_pct": 0.019
     }
   ],
   "transactions": [
@@ -3031,15 +3037,15 @@
     {
       "date": "2023-12-31",
       "period": "2023",
-      "contrib_cum": 13105.779999999999,
-      "dividends_net": 365.15,
-      "cap_gains_net": 0.0,
-      "market_value_gross": 14037.42,
-      "realized_cum_net": 730.3,
-      "realized_pct": 0.0557235052,
-      "invested_cum": 13836.08,
-      "perf_eur": 931.64,
-      "perf_pct": 0.0710861925
+      "contrib_cum": 13106,
+      "dividends_net": 365,
+      "cap_gains_net": 0,
+      "market_value_gross": 14037,
+      "realized_cum_net": 365,
+      "realized_pct": 0.028,
+      "invested_cum": 13471,
+      "perf_eur": 932,
+      "perf_pct": 0.071
     },
     {
       "date": "2024-01-28",
@@ -3200,15 +3206,15 @@
     {
       "date": "2024-12-31",
       "period": "2024",
-      "contrib_cum": 25045.78,
-      "dividends_net": 1077.973,
-      "cap_gains_net": 0.0,
-      "market_value_gross": 27877.03,
-      "realized_cum_net": 2886.153,
-      "realized_pct": 0.1152351015,
-      "invested_cum": 27931.933,
-      "perf_eur": 2831.25,
-      "perf_pct": 0.1130429957
+      "contrib_cum": 25046,
+      "dividends_net": 1078,
+      "cap_gains_net": 0,
+      "market_value_gross": 27877,
+      "realized_cum_net": 1443,
+      "realized_pct": 0.058,
+      "invested_cum": 26489,
+      "perf_eur": 2831,
+      "perf_pct": 0.113
     },
     {
       "date": "2025-01-28",
@@ -3369,28 +3375,28 @@
     {
       "date": "2025-12-31",
       "period": "2025",
-      "contrib_cum": 36095.78,
-      "dividends_net": 1632.436,
-      "cap_gains_net": 651.5999999999999,
-      "market_value_gross": 41491.06,
-      "realized_cum_net": 7454.225,
-      "realized_pct": 0.2065123679,
-      "invested_cum": 43550.005,
-      "perf_eur": 5395.28,
-      "perf_pct": 0.1494712124
+      "contrib_cum": 36096,
+      "dividends_net": 1632,
+      "cap_gains_net": 652,
+      "market_value_gross": 41491,
+      "realized_cum_net": 3727,
+      "realized_pct": 0.103,
+      "invested_cum": 39823,
+      "perf_eur": 5395,
+      "perf_pct": 0.149
     },
     {
       "date": "2026-01-28",
       "period": "2026-01",
-      "contrib_cum": 37270.78,
-      "dividends_net": 106.974,
-      "cap_gains_net": 0.0,
-      "market_value_gross": 42691.95,
-      "realized_cum_net": 7561.199,
-      "realized_pct": 0.2028720354,
-      "invested_cum": 44831.979,
-      "perf_eur": 5421.17,
-      "perf_pct": 0.1454536235
+      "contrib_cum": 37271,
+      "dividends_net": 107,
+      "cap_gains_net": 0,
+      "market_value_gross": 42692,
+      "realized_cum_net": 3834,
+      "realized_pct": 0.103,
+      "invested_cum": 41105,
+      "perf_eur": 5421,
+      "perf_pct": 0.145
     },
     {
       "date": "2026-02-28",
@@ -3404,6 +3410,19 @@
       "invested_cum": 42233,
       "perf_eur": 5489,
       "perf_pct": 0.143
+    },
+    {
+      "date": "2026-03-31",
+      "period": "2026-03",
+      "contrib_cum": 38986,
+      "dividends_net": 26,
+      "cap_gains_net": 656,
+      "market_value_gross": 42287,
+      "realized_cum_net": 4569,
+      "realized_pct": 0.117,
+      "invested_cum": 43555,
+      "perf_eur": 3301,
+      "perf_pct": 0.085
     }
   ] 
 }
