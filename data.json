@@ -8,44 +8,44 @@
     {
       "id": "matteo",
       "name": "Matteo",
-      "contributions_total": 6978,
-      "ownership_pct": 0.179
+      "contributions_total": 7128,
+      "ownership_pct": 0.180
     },
     {
       "id": "robert",
       "name": "Robert",
-      "contributions_total": 3300,
+      "contributions_total": 3375,
       "ownership_pct": 0.085
     },
     {
       "id": "paolo",
       "name": "Paolo",
-      "contributions_total": 3675,
-      "ownership_pct": 0.094
+      "contributions_total": 3775,
+      "ownership_pct": 0.095
     },
     {
       "id": "elisa",
       "name": "Elisa",
-      "contributions_total": 2925,
-      "ownership_pct": 0.075
+      "contributions_total": 3000,
+      "ownership_pct": 0.076
     },
     {
       "id": "ornella",
       "name": "Ornella",
-      "contributions_total": 5965,
-      "ownership_pct": 0.153
+      "contributions_total": 6040,
+      "ownership_pct": 0.152
     },
     {
       "id": "palma",
       "name": "Palma",
       "contributions_total": 4789,
-      "ownership_pct": 0.123
+      "ownership_pct": 0.121
     },
     {
       "id": "giuseppe",
       "name": "Giuseppe",
       "contributions_total": 4789,
-      "ownership_pct": 0.123
+      "ownership_pct": 0.121
     },
     {
       "id": "loretta-daniele",
@@ -57,13 +57,13 @@
       "id": "emma",
       "name": "Emma",
       "contributions_total": 1750,
-      "ownership_pct": 0.045
+      "ownership_pct": 0.044
     },
     {
       "id": "luca",
       "name": "Luca",
       "contributions_total": 1750,
-      "ownership_pct": 0.045
+      "ownership_pct": 0.044
     },
     {
       "id": "elisa-r",
@@ -80,14 +80,14 @@
     {
       "id": "dominic",
       "name": "Dominic",
-      "contributions_total": 1700,
-      "ownership_pct": 0.044
+      "contributions_total": 1800,
+      "ownership_pct": 0.045
     },
     {
       "id": "luigi-manuela",
       "name": "Luigi & Manuela",
-      "contributions_total": 750,
-      "ownership_pct": 0.019
+      "contributions_total": 800,
+      "ownership_pct": 0.020
     }
   ],
   "transactions": [
@@ -3423,6 +3423,19 @@
       "invested_cum": 43555,
       "perf_eur": 3301,
       "perf_pct": 0.085
+    },
+    {
+      "date": "2026-04-30",
+      "period": "2026-04",
+      "contrib_cum": 39636,
+      "dividends_net": 106,
+      "cap_gains_net": 444,
+      "market_value_gross": 45563,
+      "realized_cum_net": 5118,
+      "realized_pct": 0.129,
+      "invested_cum": 44754,
+      "perf_eur": 5927,
+      "perf_pct": 0.150
     }
   ] 
 }
