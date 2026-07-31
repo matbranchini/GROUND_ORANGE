@@ -3456,14 +3456,27 @@
       "date": "2026-06-28",
       "period": "2026-06",
       "contrib_cum": 41516,
-      "dividends_net": 0,
-      "cap_gains_net": 250,
+      "dividends_net": 250,
+      "cap_gains_net": 0,
       "market_value_gross": 47513,
       "realized_cum_net": 6119,
       "realized_pct": 0.147,
       "invested_cum": 47635,
       "perf_eur": 5997,
       "perf_pct": 0.144
+    },
+    {
+      "date": "2026-07-31",
+      "period": "2026-07",
+      "contrib_cum": 42596,
+      "dividends_net": 190,
+      "cap_gains_net": 134,
+      "market_value_gross": 48051,
+      "realized_cum_net": 6444,
+      "realized_pct": 0.151,
+      "invested_cum": 49039,
+      "perf_eur": 5455,
+      "perf_pct": 0.128
     }
   ] 
 }
