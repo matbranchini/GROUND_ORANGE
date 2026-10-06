@@ -138,8 +138,12 @@ function perfDerived(snaps){
       realized += Number(s.dividends_net||0)+Number(s.cap_gains_net||0);
     }
     const A=Number(s.contrib_cum||0); const G=Number(s.market_value_gross||0);
-    const H=G-A; const I=A?H/A:0;
-    out.push({...s, realized_cum_net:realized, realized_pct:A?realized/A:0, invested_cum:A+realized, perf_eur:H, perf_pct:I});
+    const D=s.realized_cum_net == null ? realized : Number(s.realized_cum_net);
+    const E=s.realized_pct == null ? (A?D/A:0) : Number(s.realized_pct);
+    const F=s.invested_cum == null ? A+D : Number(s.invested_cum);
+    const H=s.perf_eur == null ? G-A : Number(s.perf_eur);
+    const I=s.perf_pct == null ? (A?H/A:0) : Number(s.perf_pct);
+    out.push({...s, realized_cum_net:D, realized_pct:E, invested_cum:F, perf_eur:H, perf_pct:I});
   }
   return out;
 }
